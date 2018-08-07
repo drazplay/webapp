@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arisan LM | Info</title>
+    <link rel="stylesheet" href="uikit/dist/css/uikit.gmi.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    <div class="uk-offcanvas-content">
+        <!-- /////////////NAVBAR - TOP/////////////////////// -->
+        <div id="top-head" uk-sticky>
+          <nav class="uk-navbar-container uk-navbar-transparent uk-box-shadow-small uk-background-primary uk-light">
+            <div class="uk-container uk-container-expand" uk-navbar>
+              <div class="uk-navbar-left">
+                  <a class="uk-navbar-item uk-logo" href="#">
+                    <img class="uk-margin-small-right" src="img/logo_purple.svg" width="40" height="40" alt="" uk-svg>
+                    <img class="uk-logo-inverse uk-margin-small-right" src="img/logo_white.svg" width="40" height="40" alt="" uk-svg>
+                    <div class="uk-text-primary uk-text-bold uk-visible@m">
+                      GMI Club
+                    </div>
+                    <h3 class="uk-margin-remove uk-hidden@m">Arisan LM</h3>
+                  </a>
+              </div>
+              <div class="uk-navbar-center uk-visible@m">
+                <div class="uk-navbar-item">
+                  <h3 class="uk-margin-remove">Arisan LM</h3>
+                </div>
+              </div>
+              <div class="uk-navbar-right">
+  							<ul class="uk-navbar-nav uk-visible@m">
+  								<li><a href="#" data-uk-icon="icon: bell"></a></li>
+                  <li>
+                    <div class="uk-navbar-item">
+                      <div>
+                      <a class="uk-link-reset" href="#">
+                        <img class="uk-border-circle" src="img/avatar.jpg" width="40" height="40" alt="">
+                      </a>
+                      <div class="uk-navbar-dropdown" uk-dropdown>
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                              <li><a href="#">Edit Profile</a></li>
+                              <li class="uk-nav-divider"></li>
+                              <li><a href="#">Logout</a></li>
+                          </ul>
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+  								<li></li>
+  							</ul>
+                <a class="uk-hidden@m uk-navbar-item uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav" style="margin-right: -15px;"></a>
+  						</div>
+            </div>
+            <div class="uk-background-primary-dark">
+              <div class="uk-width-large uk-container uk-padding-remove">
+                <ul class="uk-child-width-expand uk-tab" >
+                    <li><a href="arisan_info.html">Info</a></li>
+                    <li><a href="arisan_event.html">Event</a></li>
+                    <li class="uk-active"><a href="#">Status</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- /////////////CONTENT/////////////////////// -->
+        <div id="arisan-info-page" uk-filter="target: .js-filter" class="uk-container uk-width-large uk-padding-remove">
+          <div class="uk-position-z-index" uk-sticky="offset: 114">
+            <div class="uk-panel uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom uk-background-default uk-text-muted uk-box-shadow-small">
+              <div class="uk-grid-small uk-flex uk-flex-middle uk-grid-divider" data-uk-grid>
+                <div class="uk-width-1-2 uk-text-center">
+                  <h3 class="uk-margin-remove uk-text-primary">0</h3>
+                  <p class="uk-text-small uk-margin-remove uk-text-muted">ACTIVE</p>
+                </div>
+                <div class="uk-width-1-2 uk-text-center">
+                  <h3 class="uk-margin-remove uk-text-primary">1</h3>
+                  <p class="uk-text-small uk-margin-remove uk-text-muted">CLOSED</p>
+                </div>
+              </div>
+              <div class="uk-panel uk-background-muted uk-padding-small uk-margin-top">
+                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-expand">
+                        <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+                            <div>
+                                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                    <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                    <li uk-filter-control="[data-active='active']"><a href="#">Active</a></li>
+                                    <li uk-filter-control="[data-active='closed']"><a href="#">Closed</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-auto uk-text-nowrap">
+                        <span class="uk-active" uk-filter-control="sort: data-kelompok;"><a class="uk-icon-link" href="#" uk-icon="icon: arrow-down"></a></span>
+                        <span uk-filter-control="sort: data-kelompok; order: desc"><a class="uk-icon-link" href="#" uk-icon="icon: arrow-up"></a></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul id="hover-list" class="js-filter uk-list uk-margin-remove uk-position-relative">
+              <li data-active="active" data-gram="10" data-kelompok="1000">
+                <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                  <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-auto">
+                        <div class="uk-label uk-label-big">10 gram</div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <div class="uk-grid-collapse" uk-grid>
+                        <div class="uk-width-1-1 uk-grid-collapse" uk-grid>
+                          <div class="uk-width-expand">
+                            <h5 class="uk-margin-remove">Kelompok 1000</h5>
+                            <div class="uk-grid-small uk-grid-divider uk-text-small uk-text-muted" data-uk-grid>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">Start <span class="uk-text-bold">Jun 2018</span></p>
+                              </div>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">End <span class="uk-text-bold">Apr 2019</span></p>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_star.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                            </div>
+                          </div>
+                          <div class="uk-width-auto">
+                            <div class="uk-label uk-background-purple-shade uk-text-primary">Active</div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-1">
+                          <p class="uk-margin-small-top uk-text-small uk-text-primary">Selamat! Anda menang di periode bulan ini.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <li data-active="active" data-gram="10" data-kelompok="999">
+                <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                  <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-auto">
+                        <div class="uk-label uk-label-big">25 gram</div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <div class="uk-grid-collapse" uk-grid>
+                        <div class="uk-width-1-1 uk-grid-collapse" uk-grid>
+                          <div class="uk-width-expand">
+                            <h5 class="uk-margin-remove">Kelompok 999</h5>
+                            <div class="uk-grid-small uk-grid-divider uk-text-small uk-text-muted" data-uk-grid>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">Start <span class="uk-text-bold">Jun 2018</span></p>
+                              </div>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">End <span class="uk-text-bold">Apr 2019</span></p>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_star.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                            </div>
+                          </div>
+                          <div class="uk-width-auto">
+                            <div class="uk-label uk-background-purple-shade uk-text-primary">Active</div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-1">
+                          <p class="uk-margin-small-top uk-text-small uk-text-primary">Selamat! Anda menang di periode bulan ini.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <li data-active="active" data-gram="50" data-kelompok="800">
+                <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                  <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-auto">
+                        <div class="uk-label uk-label-big">50 gram</div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <div class="uk-grid-collapse" uk-grid>
+                        <div class="uk-width-1-1 uk-grid-collapse" uk-grid>
+                          <div class="uk-width-expand">
+                            <h5 class="uk-margin-remove">Kelompok 800</h5>
+                            <div class="uk-grid-small uk-grid-divider uk-text-small uk-text-muted" data-uk-grid>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">Start <span class="uk-text-bold">Jun 2018</span></p>
+                              </div>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">End <span class="uk-text-bold">Apr 2019</span></p>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_star.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                            </div>
+                          </div>
+                          <div class="uk-width-auto">
+                            <div class="uk-label uk-background-purple-shade uk-text-primary">Active</div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-1">
+                          <p class="uk-margin-small-top uk-text-small uk-text-primary">Selamat! Anda menang di periode bulan ini.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <li data-active="active" data-gram="10" data-kelompok="799">
+                <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                  <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-auto">
+                        <div class="uk-label uk-label-big">10 gram</div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <div class="uk-grid-collapse" uk-grid>
+                        <div class="uk-width-1-1 uk-grid-collapse" uk-grid>
+                          <div class="uk-width-expand">
+                            <h5 class="uk-margin-remove">Kelompok 799</h5>
+                            <div class="uk-grid-small uk-grid-divider uk-text-small uk-text-muted" data-uk-grid>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">Start <span class="uk-text-bold">Jun 2018</span></p>
+                              </div>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">End <span class="uk-text-bold">Apr 2019</span></p>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_star.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                            </div>
+                          </div>
+                          <div class="uk-width-auto">
+                            <div class="uk-label uk-background-purple-shade uk-text-primary">Active</div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-1">
+                          <p class="uk-margin-small-top uk-text-small uk-text-primary">Selamat! Anda menang di periode bulan ini.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <li data-active="active" data-gram="10" data-kelompok="600">
+                <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                  <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-auto">
+                        <div class="uk-label uk-label-big">10 gram</div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <div class="uk-grid-collapse" uk-grid>
+                        <div class="uk-width-1-1 uk-grid-collapse" uk-grid>
+                          <div class="uk-width-expand">
+                            <h5 class="uk-margin-remove">Kelompok 600</h5>
+                            <div class="uk-grid-small uk-grid-divider uk-text-small uk-text-muted" data-uk-grid>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">Start <span class="uk-text-bold">Jun 2018</span></p>
+                              </div>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">End <span class="uk-text-bold">Apr 2019</span></p>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_star.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_grey.svg" width="10" height="10" alt="" uk-svg>
+                            </div>
+                          </div>
+                          <div class="uk-width-auto">
+                            <div class="uk-label uk-background-purple-shade uk-text-primary">Active</div>
+                          </div>
+                        </div>
+                        <div class="uk-width-1-1">
+                          <p class="uk-margin-small-top uk-text-small uk-text-primary">Selamat! Anda menang di periode bulan ini.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </li>
+              <li data-active="closed" data-gram="25" data-kelompok="588">
+                <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                  <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-auto">
+                        <div class="uk-label uk-label-big">25 gram</div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <div class="uk-grid-collapse" uk-grid>
+                        <div class="uk-width-1-1 uk-grid-collapse" uk-grid>
+                          <div class="uk-width-expand">
+                            <h5 class="uk-margin-remove">Kelompok 588</h5>
+                            <div class="uk-grid-small uk-grid-divider uk-text-small uk-text-muted" data-uk-grid>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">Start <span class="uk-text-bold">Jun 2018</span></p>
+                              </div>
+                              <div class="uk-width-auto">
+                                <p class="uk-margin-remove uk-text-small">End <span class="uk-text-bold">Apr 2019</span></p>
+                              </div>
+                            </div>
+                            <div>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_star.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                              <img src="img/dot_purple.svg" width="10" height="10" alt="" uk-svg>
+                            </div>
+                          </div>
+                          <div class="uk-width-auto">
+                            <div class="uk-label uk-background-red-shade uk-text-danger">Closed</div>
+
+                          </div>
+                        </div>
+                        <div class="uk-width-1-1">
+                          <p class="uk-margin-small-top uk-text-small uk-text-primary">Anda sudah menang di bulan Agustus 2018</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+
+        <!-- /////////////SIDEBAR - RIGHT/////////////////////// -->
+        <div id="gmi-sidebar-right" class="uk-visible@m uk-position-absolute uk-position-right uk-position-z-index">
+          <div class="uk-panel uk-padding-small uk-background-default uk-height-1-1" uk-sticky="offset: 115">
+            <ul class="uk-nav uk-nav-default">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li class="uk-active"><a href="#">Arisan LM</a></li>
+              <li><a href="#">Referral</a></li>
+              <li><a href="#">Kemitraan</a></li>
+              <li><a href="transaksi_tagihan.html">Transaksi</a></li>
+              <li><a href="#">Edukasi</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+      <!-- OFFCANVAS -->
+      <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+          <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li class="uk-active"><a href="#">Arisan LM</a></li>
+            <li><a href="#">Referral</a></li>
+            <li><a href="#">Kemitraan</a></li>
+            <li><a href="transaksi_tagihan.html">Transaksi</a></li>
+            <li><a href="#">Edukasi</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: sign-out"></span> Logout</a></li>
+          </ul>
+          <h3>Message</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

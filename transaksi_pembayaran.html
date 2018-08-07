@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transaksi | Pembayaran</title>
+    <link rel="stylesheet" href="uikit/dist/css/uikit.gmi.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    <div class="uk-offcanvas-content">
+        <!-- /////////////NAVBAR - TOP/////////////////////// -->
+        <div id="top-head" uk-sticky>
+          <nav class="uk-navbar-container uk-navbar-transparent uk-box-shadow-small uk-background-primary uk-light">
+            <div class="uk-container uk-container-expand" uk-navbar>
+              <div class="uk-navbar-left">
+                  <a class="uk-navbar-item uk-logo" href="#">
+                    <img class="uk-margin-small-right" src="img/logo_purple.svg" width="40" height="40" alt="" uk-svg>
+                    <img class="uk-logo-inverse uk-margin-small-right" src="img/logo_white.svg" width="40" height="40" alt="" uk-svg>
+                    <div class="uk-text-primary uk-text-bold uk-visible@m">
+                      GMI Club
+                    </div>
+                    <h3 class="uk-margin-remove uk-hidden@m">Transaksi</h3>
+                  </a>
+              </div>
+              <div class="uk-navbar-center uk-visible@m">
+                <div class="uk-navbar-item">
+                  <h3 class="uk-margin-remove">Transaksi</h3>
+                </div>
+              </div>
+              <div class="uk-navbar-right">
+  							<ul class="uk-navbar-nav uk-visible@m">
+  								<li><a href="#" data-uk-icon="icon: bell"></a></li>
+                  <li>
+                    <div class="uk-navbar-item">
+                      <div>
+                      <a class="uk-link-reset" href="#">
+                        <img class="uk-border-circle" src="img/avatar.jpg" width="40" height="40" alt="">
+                      </a>
+                      <div class="uk-navbar-dropdown" uk-dropdown>
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                              <li><a href="#">Edit Profile</a></li>
+                              <li class="uk-nav-divider"></li>
+                              <li><a href="#">Logout</a></li>
+                          </ul>
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+  								<li></li>
+  							</ul>
+                <a class="uk-hidden@m uk-navbar-item uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav" style="margin-right: -15px;"></a>
+  						</div>
+            </div>
+            <div class="uk-background-primary-dark">
+              <div class="uk-width-large uk-container uk-padding-remove">
+                <ul class="uk-child-width-expand uk-tab" >
+                    <li><a href="transaksi_tagihan.html">Tagihan</a></li>
+                    <li class="uk-active"><a href="#">Pembayaran</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- /////////////CONTENT/////////////////////// -->
+        <div id="transaksi-pembayaran-page" class="uk-container uk-width-large uk-padding-remove">
+          <ul id="hover-list" class="uk-list uk-margin-remove uk-position-relative">
+              <li>
+                <a class="uk-link-reset" href="#modal-invoice" uk-toggle>
+                  <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-expand">
+                        <h5 class="uk-margin-remove">INVOICE #123456</h5>
+                        <p class="uk-margin-remove">Rp. 700.000</p>
+                      </div>
+                      <div class="uk-width-auto uk-text-right">
+                          <div class="uk-text-meta">20 Jul 2018</div>
+                          <div class="uk-label uk-background-red-shade uk-text-danger">validating</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="uk-link-reset" href="#modal-invoice" uk-toggle>
+                  <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-expand">
+                        <h5 class="uk-margin-remove">INVOICE #123456</h5>
+                        <p class="uk-margin-remove">Rp. 700.000</p>
+                      </div>
+                      <div class="uk-width-auto uk-text-right">
+                          <div class="uk-text-meta">20 Jul 2018</div>
+                          <div class="uk-label uk-background-red-shade uk-text-danger">validating</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="uk-link-reset" href="#modal-invoice" uk-toggle>
+                  <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-expand">
+                        <h5 class="uk-margin-remove">INVOICE #123456</h5>
+                        <p class="uk-margin-remove">Rp. 700.000</p>
+                      </div>
+                      <div class="uk-width-auto uk-text-right">
+                          <div class="uk-text-meta">20 Jul 2018</div>
+                          <div class="uk-label uk-background-red-shade uk-text-danger">validating</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="uk-link-reset" href="#modal-invoice" uk-toggle>
+                  <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-expand">
+                        <h5 class="uk-margin-remove">INVOICE #123456</h5>
+                        <p class="uk-margin-remove">Rp. 700.000</p>
+                      </div>
+                      <div class="uk-width-auto uk-text-right">
+                          <div class="uk-text-meta">20 Jul 2018</div>
+                          <div class="uk-label uk-background-purple-shade uk-text-primary">validated</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+        </div>
+
+        <!-- /////////////SIDEBAR - RIGHT/////////////////////// -->
+        <div id="gmi-sidebar-right" class="uk-visible@m uk-position-absolute uk-position-right uk-position-z-index">
+          <div class="uk-panel uk-padding-small uk-background-default uk-height-1-1" uk-sticky="offset: 115">
+            <ul class="uk-nav uk-nav-default">
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Arisan LM</a></li>
+              <li><a href="#">Referral</a></li>
+              <li><a href="#">Kemitraan</a></li>
+              <li class="uk-active"><a href="#">Transaksi</a></li>
+              <li><a href="#">Edukasi</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ///////////MODAL INVOICE -->
+        <div id="modal-invoice" class="uk-flex-top" uk-modal>
+          <div class="uk-modal-dialog uk-width-large uk-margin-auto-vertical">
+              <!-- <div class="uk-panel uk-background-muted">
+                <button class="uk-close" type="button" uk-close></button>
+              </div> -->
+              <div class="uk-modal-header uk-padding-small uk-text-right">
+                  <button class="uk-close uk-modal-close" type="button" uk-close></button>
+              </div>
+              <div class="uk-modal-body uk-padding-small" uk-overflow-auto>
+                <div class="uk-grid-small" uk-grid>
+                  <div class="uk-width-expand">
+                    <h3 class="uk-margin-remove-bottom">Invoice #123456</h3>
+                    <p class="uk-text-muted uk-margin-remove">20 Jul 2018</p>
+                  </div>
+                  <div class="uk-width-auto">
+                    <p class="uk-label uk-background-red-shade uk-text-danger">validating</p>
+                  </div>
+                </div>
+
+                <div class="uk-margin-top">
+                  <p class="uk-margin-remove uk-text-muted">Metode Pembayaran</p>
+                  <hr class="uk-margin-small">
+                  <h5 class="uk-margin-remove">Transfer</h5>
+                  <div class="uk-grid-collapse uk-text-small" uk-grid>
+                    <div class="uk-width-1-3">
+                      <p class="uk-margin-remove">Bank Tujuan</p>
+                    </div>
+                    <div class="uk-width-expand">
+                      <p class="uk-margin-remove">BCA</p>
+                    </div>
+                  </div>
+                  <div class="uk-grid-collapse uk-text-small" uk-grid>
+                    <div class="uk-width-1-3">
+                      <p class="uk-margin-remove">Bank Asal</p>
+                    </div>
+                    <div class="uk-width-expand">
+                      <p class="uk-margin-remove">BNI</p>
+                    </div>
+                  </div>
+                  <div class="uk-grid-collapse uk-text-small" uk-grid>
+                    <div class="uk-width-1-3">
+                      <p class="uk-margin-remove">Pemilik Bank Asal</p>
+                    </div>
+                    <div class="uk-width-expand">
+                      <p class="uk-margin-remove">Mumun Surumun</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="uk-margin-medium-top">
+                  <p class="uk-margin-remove uk-text-muted">Rincian Pembayaran</p>
+                  <hr class="uk-margin-small">
+                  <h5 class="uk-margin-remove">Arisan</h5>
+
+                  <!--/// ITEM -->
+                  <ul class="uk-list uk-margin-remove uk-text-small">
+                    <li class="uk-margin-remove-top">
+                      <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-3-5">
+                          <p class="">Cicilan Arisan 1/10</p>
+                        </div>
+                        <div class="uk-width-1-5">
+                          <p class="">Rp.</p>
+                        </div>
+                        <div class="uk-width-1-5 uk-text-right">
+                          <p class="">600.000</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="uk-margin-remove-top">
+                      <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-3-5">
+                          <p class="">Denda Keterlambatan</p>
+                        </div>
+                        <div class="uk-width-1-5">
+                          <p class="">Rp.</p>
+                        </div>
+                        <div class="uk-width-1-5 uk-text-right">
+                          <p class="">-</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <hr class="uk-margin-small">
+
+                  <!--/// SUBTOTAL -->
+                  <div class="uk-grid-small uk-text-bold uk-text-small" uk-grid>
+                    <div class="uk-width-3-5 uk-text-right">
+                      <p class="">Sub Total</p>
+                    </div>
+                    <div class="uk-width-1-5">
+                      <p class="">Rp.</p>
+                    </div>
+                    <div class="uk-width-1-5 uk-text-right">
+                      <p class="">600.000</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="uk-margin-medium-top">
+                  <h5 class="uk-margin-remove">Registrasi</h5>
+
+                  <!--/// ITEM -->
+                  <ul class="uk-list uk-margin-remove uk-text-small">
+                    <li class="uk-margin-remove-top">
+                      <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-3-5">
+                          <p class="">Cicilan Registrasi 2/5</p>
+                        </div>
+                        <div class="uk-width-1-5">
+                          <p class="">Rp.</p>
+                        </div>
+                        <div class="uk-width-1-5 uk-text-right">
+                          <p class="">100.000</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <hr class="uk-margin-small">
+
+                  <!--/// SUBTOTAL -->
+                  <div class="uk-grid-small uk-text-bold uk-text-small" uk-grid>
+                    <div class="uk-width-3-5 uk-text-right">
+                      <p class="">Sub Total</p>
+                    </div>
+                    <div class="uk-width-1-5">
+                      <p class="">Rp.</p>
+                    </div>
+                    <div class="uk-width-1-5 uk-text-right">
+                      <p class="">100.000</p>
+                    </div>
+                  </div>
+
+                  <hr class="uk-margin-small" style="border-width: 2px">
+                  <!--/// TOTAL -->
+                  <div class="uk-grid-small uk-text-bold uk-text-small" uk-grid>
+                    <div class="uk-width-3-5 uk-text-right">
+                      <p class="">Total</p>
+                    </div>
+                    <div class="uk-width-1-5">
+                      <p class="">Rp.</p>
+                    </div>
+                    <div class="uk-width-1-5 uk-text-right">
+                      <p class="">700.000</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+          </div>
+        </div>
+
+      <!-- OFFCANVAS -->
+      <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+          <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="arisan_info.html">Arisan LM</a></li>
+            <li><a href="#">Referral</a></li>
+            <li><a href="#">Kemitraan</a></li>
+            <li class="uk-active"><a href="transaksi_tagihan.html">Transaksi</a></li>
+            <li><a href="#">Edukasi</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: sign-out"></span> Logout</a></li>
+          </ul>
+          <h3>Message</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

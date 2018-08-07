@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arisan LM | Review</title>
+    <link rel="stylesheet" href="uikit/dist/css/uikit.gmi.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    <div class="uk-offcanvas-content">
+        <!-- /////////////NAVBAR - TOP/////////////////////// -->
+        <div id="top-head" uk-sticky>
+          <nav class="uk-navbar-container uk-navbar-transparent uk-box-shadow-small uk-background-primary uk-light">
+            <div class="uk-container uk-container-expand uk-padding-remove-left" uk-navbar>
+              <div class="uk-navbar-left">
+                  <div class="uk-navbar-item" href="#">
+                    <a href="daftar_arisan.html" class="uk-icon-link" uk-icon="icon: arrow-left; ratio: 2"></a>
+                  </div>
+                  <h3 class="uk-margin-remove uk-hidden@m">Review</h3>
+              </div>
+              <div class="uk-navbar-center uk-visible@m">
+                <div class="uk-navbar-item">
+                  <h3 class="uk-margin-remove">Daftar Arisan LM</h3>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- /////////////CONTENT/////////////////////// -->
+        <div id="arisan-daftar-page" class="uk-container uk-width-large uk-padding-remove">
+              <form action="daftar_arisan.html">
+      					<fieldset class="uk-fieldset">
+
+                  <div class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-bottom">
+                    <h4 class="uk-margin-remove">Anda akan melakukan pendaftaran arisan LM sebagai berikut.</h4>
+                    <div class="uk-margin-top">
+                      <p class="uk-margin-remove">Gramasi</p>
+                      <h3 class="uk-margin-remove">5 gram</h3>
+                    </div>
+                    <div class="uk-margin-top">
+                      <p class="uk-margin-remove">Periode</p>
+                      <h3 class="uk-margin-remove">Agustus 2018</h3>
+                    </div>
+
+                  </div>
+
+                  <div class="uk-margin uk-padding-small">
+      							<a href="#modal-submit-booking" class="uk-button uk-button-primary uk-border-rounded-full uk-width-1-1" uk-toggle>Lanjutkan</a>
+      						</div>
+      					</fieldset>
+      				</form>
+        </div>
+
+        <!-- /////////////SIDEBAR - RIGHT/////////////////////// -->
+        <div id="gmi-sidebar-right" class="uk-visible@m uk-position-absolute uk-position-right uk-position-z-index">
+          <div class="uk-panel uk-padding-small uk-background-default uk-height-1-1" uk-sticky="offset: 115">
+            <ul class="uk-nav uk-nav-default">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li class="uk-active"><a href="#">Arisan LM</a></li>
+              <li><a href="#">Referral</a></li>
+              <li><a href="#">Kemitraan</a></li>
+              <li><a href="transaksi_tagihan.html">Transaksi</a></li>
+              <li><a href="#">Edukasi</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- MODAL-BOOKING-SUBMIT -->
+        <div id="modal-submit-booking" class="uk-flex-top" uk-modal="esc-close:false; bg-close:false;">
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                <h3>Pendaftaran Arisan LM</h3>
+                <p class="uk-margin-remove">Gramasi 5 gram</p>
+                <p class="uk-margin-remove">Periode Agustus 2018</p>
+                <h4 class="uk-margin-remove">Berhasil</h4>
+                <p class="uk-text-right">
+                    <a href="arisan_info.html" class="uk-button uk-button-primary" type="button">OK</a>
+                </p>
+            </div>
+        </div>
+
+
+      <!-- OFFCANVAS -->
+      <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+          <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li class="uk-active"><a href="arisan_info.html">Arisan LM</a></li>
+            <li><a href="#">Referral</a></li>
+            <li><a href="#">Kemitraan</a></li>
+            <li><a href="transaksi_tagihan.html">Transaksi</a></li>
+            <li><a href="#">Edukasi</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: sign-out"></span> Logout</a></li>
+          </ul>
+          <h3>Message</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

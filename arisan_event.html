@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arisan LM | Event</title>
+    <link rel="stylesheet" href="uikit/dist/css/uikit.gmi.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    <div class="uk-offcanvas-content">
+        <!-- /////////////NAVBAR - TOP/////////////////////// -->
+        <div id="top-head" uk-sticky>
+          <nav class="uk-navbar-container uk-navbar-transparent uk-box-shadow-small uk-background-primary uk-light">
+            <div class="uk-container uk-container-expand" uk-navbar>
+              <div class="uk-navbar-left">
+                  <a class="uk-navbar-item uk-logo" href="#">
+                    <img class="uk-margin-small-right" src="img/logo_purple.svg" width="40" height="40" alt="" uk-svg>
+                    <img class="uk-logo-inverse uk-margin-small-right" src="img/logo_white.svg" width="40" height="40" alt="" uk-svg>
+                    <div class="uk-text-primary uk-text-bold uk-visible@m">
+                      GMI Club
+                    </div>
+                    <h3 class="uk-margin-remove uk-hidden@m">Arisan LM</h3>
+                  </a>
+              </div>
+              <div class="uk-navbar-center uk-visible@m">
+                <div class="uk-navbar-item">
+                  <h3 class="uk-margin-remove">Arisan LM</h3>
+                </div>
+              </div>
+              <div class="uk-navbar-right">
+  							<ul class="uk-navbar-nav uk-visible@m">
+  								<li><a href="arisan_info.html" data-uk-icon="icon: bell"></a></li>
+                  <li>
+                    <div class="uk-navbar-item">
+                      <div>
+                      <a class="uk-link-reset" href="#">
+                        <img class="uk-border-circle" src="img/avatar.jpg" width="40" height="40" alt="">
+                      </a>
+                      <div class="uk-navbar-dropdown" uk-dropdown>
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                              <li><a href="#">Edit Profile</a></li>
+                              <li class="uk-nav-divider"></li>
+                              <li><a href="#">Logout</a></li>
+                          </ul>
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+  								<li></li>
+  							</ul>
+                <a class="uk-hidden@m uk-navbar-item uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav" style="margin-right: -15px;"></a>
+  						</div>
+            </div>
+            <div class="uk-background-primary-dark">
+              <div class="uk-width-large uk-container uk-padding-remove">
+                <ul class="uk-child-width-expand uk-tab">
+                    <li><a href="arisan_info.html">Info</a></li>
+                    <li class="uk-active"><a href="#">Event</a></li>
+                    <li><a href="arisan_status.html">Status</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- /////////////CONTENT/////////////////////// -->
+        <div id="arisan-info-page" class="uk-container uk-width-large uk-padding-remove">
+            <div class="uk-card uk-card-small">
+              <div class="uk-card-media-top uk-light uk-inline">
+                <img src="img/placeholder.jpg" alt="">
+                <div class="uk-overlay uk-position-bottom-right">
+                    <a href="" class="uk-icon-button" uk-icon="forward" uk-tooltip="Location"></a>
+                </div>
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title uk-margin-remove">Event Arisan LM</h3>
+                <p class="uk-text-small uk-margin-remove">Periode Juli 2018</p>
+                <h3 class="uk-label uk-margin" style="font-size: 20px; font-weight: 600; text-transform: none">#Healthy Life Ala GMI Club</h3>
+                <h4 class="uk-margin-remove">Fox Harris City Center</h4>
+                <p class="uk-text-small uk-margin-remove-top uk-margin-small-bottom">Jl. Jawa No. 3 Bandung</p>
+                <p class="uk-text-small uk-margin-remove">Sabtu, 21 Juli 2018</p>
+                <p class="uk-text-small uk-margin-remove">09:00 - 15:00 PM</p>
+                <p class="uk-margin-remove-bottom uk-text-meta">Dresscode</p>
+                <span class="uk-label uk-margin-remove uk-position">Sporty</span>
+                <p class="uk-text-primary">Free Tickets Only for 125 members</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- /////////////SIDEBAR - RIGHT/////////////////////// -->
+        <div id="gmi-sidebar-right" class="uk-visible@m uk-position-absolute uk-position-right uk-position-z-index">
+          <div class="uk-panel uk-padding-small uk-background-default uk-height-1-1" uk-sticky="offset: 115">
+            <ul class="uk-nav uk-nav-default">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li class="uk-active"><a href="#">Arisan LM</a></li>
+              <li><a href="#">Referral</a></li>
+              <li><a href="#">Kemitraan</a></li>
+              <li><a href="transaksi_tagihan.html">Transaksi</a></li>
+              <li><a href="#">Edukasi</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+      <!-- OFFCANVAS -->
+      <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+          <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li class="uk-active"><a href="#">Arisan LM</a></li>
+            <li><a href="#">Referral</a></li>
+            <li><a href="#">Kemitraan</a></li>
+            <li><a href="transaksi_tagihan.html">Transaksi</a></li>
+            <li><a href="#">Edukasi</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: sign-out"></span> Logout</a></li>
+          </ul>
+          <h3>Message</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transaksi | Tagihan</title>
+    <link rel="stylesheet" href="uikit/dist/css/uikit.gmi.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
+  </head>
+  <body>
+    <div class="uk-offcanvas-content">
+        <!-- /////////////NAVBAR - TOP/////////////////////// -->
+        <div id="top-head" uk-sticky>
+          <nav class="uk-navbar-container uk-navbar-transparent uk-box-shadow-small uk-background-primary uk-light">
+            <div class="uk-container uk-container-expand" uk-navbar>
+              <div class="uk-navbar-left">
+                  <a class="uk-navbar-item uk-logo" href="#">
+                    <img class="uk-margin-small-right" src="img/logo_purple.svg" width="40" height="40" alt="" uk-svg>
+                    <img class="uk-logo-inverse uk-margin-small-right" src="img/logo_white.svg" width="40" height="40" alt="" uk-svg>
+                    <div class="uk-text-primary uk-text-bold uk-visible@m">
+                      GMI Club
+                    </div>
+                    <h3 class="uk-margin-remove uk-hidden@m">Transaksi</h3>
+                  </a>
+              </div>
+              <div class="uk-navbar-center uk-visible@m">
+                <div class="uk-navbar-item">
+                  <h3 class="uk-margin-remove">Transaksi</h3>
+                </div>
+              </div>
+              <div class="uk-navbar-right">
+  							<ul class="uk-navbar-nav uk-visible@m">
+  								<li><a href="#" data-uk-icon="icon: bell"></a></li>
+                  <li>
+                    <div class="uk-navbar-item">
+                      <div>
+                      <a class="uk-link-reset" href="#">
+                        <img class="uk-border-circle" src="img/avatar.jpg" width="40" height="40" alt="">
+                      </a>
+                      <div class="uk-navbar-dropdown" uk-dropdown>
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                              <li><a href="#">Edit Profile</a></li>
+                              <li class="uk-nav-divider"></li>
+                              <li><a href="#">Logout</a></li>
+                          </ul>
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+  								<li></li>
+  							</ul>
+                <a class="uk-hidden@m uk-navbar-item uk-navbar-toggle" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav" style="margin-right: -15px;"></a>
+  						</div>
+            </div>
+            <div class="uk-background-primary-dark">
+              <div class="uk-width-large uk-container uk-padding-remove">
+                <ul class="uk-child-width-expand uk-tab" >
+                    <li class="uk-active"><a href="#">Tagihan</a></li>
+                    <li><a href="transaksi_pembayaran.html">Pembayaran</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- /////////////CONTENT/////////////////////// -->
+        <div id="transaksi-tagihan-page" class="uk-container uk-width-large uk-padding-remove">
+          <div class="uk-position-z-index" uk-sticky="offset: 114">
+            <div class="uk-card uk-card-small uk-card-body uk-background-primary-light uk-light uk-box-shadow-small">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-expand">
+                      <p class="uk-margin-remove">Total Tagihan</p>
+                      <h3 class="uk-margin-remove">700.000</h3>
+                  </div>
+                  <div class="uk-width-auto uk-text-right">
+                    <a href="#" class="revealed uk-button uk-button-small uk-button-default uk-border-rounded-full" uk-toggle="target:.revealed">Select All</a>
+                    <a href="#" class="revealed uk-button uk-button-small uk-button-default uk-border-rounded-full" uk-toggle="target:.revealed" hidden>Cancel</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <ul id="hover-list" class="uk-list uk-margin-remove uk-position-relative">
+            <li>
+              <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                <div class="uk-grid-collapse" uk-grid>
+                  <div class="uk-width-expand">
+                    <div class="uk-grid" uk-grid>
+                      <div class="uk-width-expand">
+                        <h4 class="uk-margin-remove">Registrasi Member</h4>
+                      </div>
+                      <div class="uk-width-auto">
+                        <input class="uk-checkbox revealed" type="checkbox" hidden checked>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-1">
+                    <hr class="uk-margin-small-top">
+                  </div>
+                </div>
+                <!--/// DATE -->
+                <div class="uk-grid-small" uk-grid>
+                  <div class="uk-width-1-4">
+                    <p class="uk-text-meta">Date</p>
+                  </div>
+                  <div class="uk-width-3-4">
+                    <p class="uk-text-meta">01 Jun 2018</p>
+                  </div>
+                </div>
+                <div class="uk-grid-small uk-margin-remove-top" uk-grid>
+                  <div class="uk-width-1-4">
+                    <p class="uk-text-meta">Payment due</p>
+                  </div>
+                  <div class="uk-width-3-4">
+                    <p class="uk-text-meta">01 Jul 2018</p>
+                  </div>
+                </div>
+
+                <!--/// ITEM -->
+                <ul class="uk-list uk-padding-remove uk-margin-top">
+                  <li>
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-3-5">
+                        <p class="">Cicilan Registrasi 2/5</p>
+                      </div>
+                      <div class="uk-width-1-5">
+                        <p class="">Rp.</p>
+                      </div>
+                      <div class="uk-width-1-5 uk-text-right">
+                        <p class="">100.000</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <hr class="uk-margin-small">
+
+                <!--/// TOTAL -->
+                <div class="uk-grid-small uk-text-bold" uk-grid>
+                  <div class="uk-width-3-5 uk-text-right">
+                    <p class="">Total</p>
+                  </div>
+                  <div class="uk-width-1-5">
+                    <p class="">Rp.</p>
+                  </div>
+                  <div class="uk-width-1-5 uk-text-right">
+                    <p class="">100.000</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                <div class="uk-grid-collapse" uk-grid>
+                  <div class="uk-width-expand">
+                    <div class="uk-grid" uk-grid>
+                      <div class="uk-width-expand">
+                        <h4 class="uk-margin-remove">Cicilan Arisan</h4>
+                      </div>
+                      <div class="uk-width-auto">
+                        <input class="uk-checkbox checked revealed" type="checkbox" hidden checked>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-1">
+                    <hr class="uk-margin-small-top">
+                  </div>
+                </div>
+                <!--/// DATE -->
+                <div class="uk-grid-small" uk-grid>
+                  <div class="uk-width-1-4">
+                    <p class="uk-text-meta">Date</p>
+                  </div>
+                  <div class="uk-width-3-4">
+                    <p class="uk-text-meta">01 Jun 2018</p>
+                  </div>
+                </div>
+                <div class="uk-grid-small uk-margin-remove-top" uk-grid>
+                  <div class="uk-width-1-4">
+                    <p class="uk-text-meta">Payment due</p>
+                  </div>
+                  <div class="uk-width-3-4">
+                    <p class="uk-text-meta">01 Jul 2018</p>
+                  </div>
+                </div>
+                <div class="uk-grid-small uk-margin-remove-top" uk-grid>
+                  <div class="uk-width-1-4">
+                    <p class="uk-text-meta">Gramasi</p>
+                  </div>
+                  <div class="uk-width-3-4">
+                    <p class="uk-text-meta">100 gram</p>
+                  </div>
+                </div>
+                <div class="uk-grid-small uk-margin-remove-top" uk-grid>
+                  <div class="uk-width-1-4">
+                    <p class="uk-text-meta">Kelompok</p>
+                  </div>
+                  <div class="uk-width-3-4">
+                    <p class="uk-text-meta">899</p>
+                  </div>
+                </div>
+
+                <!--/// ITEM -->
+                <ul class="uk-list uk-padding-remove uk-margin-top">
+                  <li class="uk-margin-remove-top">
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-3-5">
+                        <p class="">Cicilan Arisan 1/10</p>
+                      </div>
+                      <div class="uk-width-1-5">
+                        <p class="">Rp.</p>
+                      </div>
+                      <div class="uk-width-1-5 uk-text-right">
+                        <p class="">600.000</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="uk-margin-remove-top">
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-3-5">
+                        <p class="">Denda Keterlambatan</p>
+                      </div>
+                      <div class="uk-width-1-5">
+                        <p class="">Rp.</p>
+                      </div>
+                      <div class="uk-width-1-5 uk-text-right">
+                        <p class="">-</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <hr class="uk-margin-small">
+
+                <!--/// TOTAL -->
+                <div class="uk-grid-small uk-text-bold" uk-grid>
+                  <div class="uk-width-3-5 uk-text-right">
+                    <p class="">Total</p>
+                  </div>
+                  <div class="uk-width-1-5">
+                    <p class="">Rp.</p>
+                  </div>
+                  <div class="uk-width-1-5 uk-text-right">
+                    <p class="">600.000</p>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ///////////TOTAL REVEALED -->
+        <div class="uk-position-fixed uk-position-bottom-center uk-width-large uk-container uk-padding-remove">
+            <div id="total-revealed" class="revealed uk-card uk-card-small uk-card-body uk-background-default uk-box-shadow-small uk-animation-slide-bottom" hidden>
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-expand">
+                      <p class="uk-margin-remove">Total Pembayaran</p>
+                      <h3 class="uk-margin-remove">700.000</h3>
+                  </div>
+                  <div class="uk-width-auto uk-text-right">
+                    <a href="confirmation.html" class="uk-button uk-button-small uk-button-default uk-border-rounded-full">Konfirmasi</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+
+        <!-- /////////////SIDEBAR - RIGHT/////////////////////// -->
+        <div id="gmi-sidebar-right" class="uk-visible@m uk-position-absolute uk-position-right uk-position-z-index">
+          <div class="uk-panel uk-padding-small uk-background-default uk-height-1-1" uk-sticky="offset: 115">
+            <ul class="uk-nav uk-nav-default">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="arisan_info.html">Arisan LM</a></li>
+              <li><a href="#">Referral</a></li>
+              <li><a href="#">Kemitraan</a></li>
+              <li class="uk-active"><a href="#">Transaksi</a></li>
+              <li><a href="#">Edukasi</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+      <!-- OFFCANVAS -->
+      <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+          <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="arisan_info.html">Arisan LM</a></li>
+            <li><a href="#">Referral</a></li>
+            <li><a href="#">Kemitraan</a></li>
+            <li class="uk-active"><a href="transaksi_tagihan.html">Transaksi</a></li>
+            <li><a href="#">Edukasi</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: sign-out"></span> Logout</a></li>
+          </ul>
+          <h3>Message</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
